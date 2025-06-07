@@ -29,6 +29,7 @@ Data Analysis: DAX (Data Analysis Expressions)
 ✅ Power BI dashboard design (clean UI with slicers, cards, and visuals)
 ✅ Business storytelling with data
 
-![image](https://github.com/user-attachments/assets/97f3d075-1c68-40ca-ab45-2872c908a45d) ![image](https://github.com/user-attachments/assets/c80a34d5-ad86-4430-b7ca-e75dbe95087a)
+![image](https://github.com/user-attachments/assets/23c5f208-0abf-4810-b8ff-ab95e3b7a32c)
+![image](https://github.com/user-attachments/assets/c80a34d5-ad86-4430-b7ca-e75dbe95087a)
 
 

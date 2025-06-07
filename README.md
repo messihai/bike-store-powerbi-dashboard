@@ -33,3 +33,28 @@ Data Analysis: DAX (Data Analysis Expressions)
 ![image](https://github.com/user-attachments/assets/c80a34d5-ad86-4430-b7ca-e75dbe95087a)
 
 
+▶️ To connect the Power BI dashboard to your SQL Server:
+
+Go to Get Data > SQL Server, enter your Server Name and Database Name, then expand the Advanced options, and paste the following SQL query:
+
+WITH cte AS (
+    SELECT * FROM bike_share_yr_0
+    UNION ALL
+    SELECT * FROM bike_share_yr_1
+)
+
+SELECT
+    dteday,
+    season,
+    a.yr,
+    weekday,
+    hr,
+    rider_type,
+    riders,
+    price,
+    COGS,
+    riders * price AS revenue,
+    riders * price - COGS AS profit
+FROM cte a
+LEFT JOIN cost_table b
+    ON a.yr = b.yr
